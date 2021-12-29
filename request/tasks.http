@@ -1,0 +1,13 @@
+GET http://localhost:4000/api/eggs
+
+###
+POST http://localhost:4000/api/eggs HTTP/1.1
+Content-Type: application/json
+
+{
+    "wallet": "0x4647372CCDC6f3B8C2a419F81e1a778e98D5D1aC",
+    "idegg": "1"
+}
+
+###
+GET http://localhost:4000/api/eggs/100
