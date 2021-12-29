@@ -9,6 +9,6 @@ var _dotenv = require("dotenv");
 
 (0, _dotenv.config)();
 var _default = {
-  mongodbURL: process.env.MONGODB_URI
+  mongodbURL: process.env.MONGODB_URI || "mongodb://localhost/eggs"
 };
 exports["default"] = _default;
